@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import NavTabs from './pages/navtabs';
-import Home from './pages/home';
-import Project from './pages/project';
-import Resume from './pages/resume';
-import Contact from './pages/contact';
+import NavTabs from '../src/pages/navtabs';
+import Home from '../src/pages/home';
+import Project from '../src/pages/project';
+import Resume from '../src/pages/resume';
+import Contact from '../src/pages/contact';
 
 
 export default function MainContainer() {

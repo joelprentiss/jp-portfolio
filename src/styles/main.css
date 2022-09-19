@@ -1,0 +1,33 @@
+btn{
+    background-color: #da0011;
+    color: #f8fff4;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #0e0004 ;
+    color: #f8fff4;
+}
+
+h1{
+    color: #f8fff4;
+    font-weight: bold;
+}
+
+body{
+    background-color: #0e0004;
+    color: #f8fff4;
+}
+
+header{
+    background-color: #0e0004;
+    color: #f8fff4
+}
+
+*{
+    color: #f8fff4;
+}
+
+
