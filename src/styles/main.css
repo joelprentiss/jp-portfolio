@@ -1,33 +1,43 @@
-btn{
-    background-color: #da0011;
+.adjust{
     color: #f8fff4;
-    
+    background-color: #0E0004;
 }
 
-footer{
-    display: flex;
-    justify-content: center;
-    background-color: #0e0004 ;
-    color: #f8fff4;
-}
 
-h1{
-    color: #f8fff4;
-    font-weight: bold;
-}
-
-body{
-    background-color: #0e0004;
-    color: #f8fff4;
-}
 
 header{
     background-color: #0e0004;
     color: #f8fff4
 }
 
-*{
+
+.button:hover{
+    background-color:#71677C ;
+}
+
+.button{
+    background-color: #da0011;
+    font-weight: bold;
     color: #f8fff4;
 }
 
+.extraPadding{
+    padding-top: 3.5%;
+}
 
+.contactPadding{
+    padding-top: 10%;
+    padding-left: 20%;
+    background-color: #f8fff4;
+    /* padding-bottom: 50%; */
+}
+
+.contactCard{
+    background-color: #f8fff4;
+    color:#0E0004;
+}
+
+li{
+    background-color: #f8fff4;
+    color: #0E0004
+}

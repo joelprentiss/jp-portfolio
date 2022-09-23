@@ -1,9 +1,14 @@
 import React, {useState} from 'react';
 import {validateEmail} from '../controller'
-
+const styles={
+    cardStyle:{
+        background: '#f8fff4',
+        color: '#0E0004'
+    }
+}
 function Contact (){
     const [email, setEmail] = useState('');
-    const [messageSubject, setSubject]= useState('');
+    const [name, setName]= useState('');
     const [messageBody, setBody]= useState('');
     const[errorMessage, setErrorMessage]= useState('');
   
@@ -14,8 +19,8 @@ function Contact (){
       const inputValue = target.value;
       if (inputType === 'email'){
         setEmail(inputValue);
-      } else if (inputType === 'messageSubject'){
-        setSubject(inputValue);
+      } else if (inputType === 'name'){
+        setName(inputValue);
       }else {
         setBody(inputValue)
       }
@@ -28,74 +33,44 @@ function Contact (){
       }
       setBody('');
       setEmail('');
-      setSubject('');
+      setName('');
     };
     return(
-        <div>
-                    <section className="contact">
-            <div className="container">
-                {/* <!-- Contact Section Heading--> */}
-                <h2 className="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
-                {/* <!-- Icon Divider--> */}
-                <div className="divider-custom">
-                    <div className="divider-custom-line"></div>
-                    <div className="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div className="divider-custom-line"></div>
-                </div>
-                {/* <!-- Contact Section Form--> */}
-                <div className="row justify-content-center">
-                    <div className="col-lg-8 col-xl-7">
-                        {/* <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!--> */}
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            {/* <!-- Name input--> */}
-                            <div className="form-floating mb-3">
-                                <input className="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div className="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            {/* <!-- Email address input--> */}
-                            <div className="form-floating mb-3">
-                                <input className="form-control" id="email" type="email" placeholder="name@example.com"/>
-                                <label for="email">Email address</label>
-                                <div className="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div className="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                                </div>
-                            {/* <!-- Message input--> */}
-                            <div className="form-floating mb-3">
-                                <textarea className="form-control"  type="text" placeholder="Enter your message here..."></textarea>
-                                <label for="message">Message</label>
-                                <div className="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            {/* <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted--> */}
-                            <div className="d-none" id="submitSuccessMessage">
-                                <div className="text-center mb-3">
-                                    <div className="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            {/* <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form--> */}
-                            <div className="d-none" id="submitErrorMessage"><div className="text-center text-danger mb-3">Error sending message!</div></div>
-                            {/* <!-- Submit Button--> */}
-                            <button className="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div className='contactPadding row row-cols-md-3'>
+        <card className='col'>
+        <form action='https://script.google.com/macros/s/AKfycbwwaxTnYYmf7m9ALRjwP7WB1Wu2dfTV66uQjXr_iYOKKstaDzXUUQMGisH17tWJL-2lbw/exec' method="POST"  id="contactForm">
+        <div className="container">  
+        <h3>Contact me!</h3>
+        <fieldset>
+        <input onChange={handleInputChange} value={name} placeholder="Your name" type="text" tabindex="1" required autofocus/>
+        </fieldset>
+        <fieldset>
+        <input onChange={handleInputChange} value={email} placeholder="Your Email Address" type="email" tabindex="2" required/>
+        </fieldset>
+        <fieldset>
+        <input placeholder="Your Phone Number" type="tel" tabindex="3" required/>
+        </fieldset>
+        <fieldset>
+         <textarea onChange={handleInputChange} value={messageBody} placeholder="Type your Message Here...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+        <button onClick={handleFormSubmit} name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+          </div>
+        </form>
+</card>
+<div className="card contactCard list-inline" style={styles.cardStyle}>
+        <div className="card-body">
+      <h5 className="card-title">Joel's Contact Information</h5>
+      <ul className="card-text contactCard">
+        <li>Email: prentissjoel@gmail.com</li>
+        <li>Phone Number: (925)594-0381</li>
+        <li>Instagram: @thegijoel</li>
+        <li>TikTok: @thegijoel</li>
+        <li>Address: PO Box 2041 Georgetown TX 78626</li>
+      </ul>
+    </div>
+        </div>
         </div>
     )
 };

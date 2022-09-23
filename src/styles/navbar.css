@@ -1,9 +1,8 @@
-li{
+.navLi{
     background-color: #da0011;
     font-weight: bold;
-    color: #f8fff4;
 }
 
 nav a:hover{
     background-color:#71677C ;
-}
+    }
