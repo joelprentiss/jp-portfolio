@@ -4,6 +4,7 @@ import Home from '../src/pages/home';
 import Project from '../src/pages/project';
 import Resume from '../src/pages/resume';
 import Contact from '../src/pages/contact';
+import Footer from '../src/pages/footer';
 
 
 export default function MainContainer() {
@@ -28,9 +29,12 @@ export default function MainContainer() {
 
   return (
     <div>
-            <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+            <NavTabs currentPage={currentPage} handlePageChange={handlePageChange}></NavTabs>
             {renderPage()}
+            <Footer/>
+           
     </div>
+
   );
 }
 

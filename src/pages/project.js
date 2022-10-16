@@ -7,9 +7,10 @@ const styles={
  },
  button:{
   background:'#da0011',
-  color: '#0E0004',
+  color: '#f8fff4',
   font: 'bold'
- }
+ },
+
 }
 
 export default function Projects() {
@@ -25,10 +26,10 @@ export default function Projects() {
         <h5 class="card-title">Quar+z Project Management</h5>
         <p class="card-text">A sleek easy to use project management tool that allows you to create teams, users, and projects. Allows users to update project status as well as cost.</p>
       <a href='https://github.com/BrianLalli/Quartz.git' target='_blank' rel='noreferrer'>
-      <button style={styles.button}>GitHub Repository</button>
+      <button className='button'>GitHub Repository</button>
       </a>
       <a href='https://quartzg3.herokuapp.com/' target='_blank' rel='noreferrer'>
-      <button style={styles.button}>Deployed Heroku</button>
+      <button className='button'>Deployed Heroku</button>
       </a>
       </div>
     </div>
@@ -40,10 +41,10 @@ export default function Projects() {
         <h5 class="card-title">Travel Planner</h5>
         <p class="card-text">A simple application for planning a road trip. Allows you to calculate estimated fuel cost dependent on your vehicles MPG. Also allows you to pick or build your own playlist via Spotify.</p>
       <a href='https://github.com/Andrew87E/Travel-Planner' target='_blank' rel='noreferrer'>
-      <button style={styles.button}>GitHub Repository</button>
+      <button className='button'>GitHub Repository</button>
       </a>
       <a href='https://andrew87e.github.io/Travel-Planner/' target='_blank' rel='noreferrer'>
-      <button style={styles.button}>Deployed Heroku</button>
+      <button className='button'>Deployed Heroku</button>
       </a>
       </div>
     </div>
@@ -55,10 +56,10 @@ export default function Projects() {
         <h5 class="card-title">Tech Blog</h5>
         <p class="card-text">A social media tech blog that allows users to create a profile, create blog post, comment on other users post, as well as update and delete post and comments.</p>
         <a href='https://github.com/Castoreno05/BootcampBlog.git' target='_blank' rel='noreferrer'>
-        <button style={styles.button}>GitHub Repository</button>
+        <button className='button'>GitHub Repository</button>
         </a>
         <a href='https://bootcampblogg.herokuapp.com/' target='_blank' rel='noreferrer'>
-      <button style={styles.button}>Deployed Heroku</button>
+      <button className='button'>Deployed Heroku</button>
       </a>
       </div>
     </div>

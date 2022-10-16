@@ -5,7 +5,7 @@ import '../styles/card.css';
 
 export default function Home(){
     return(
-        <div className='extraPadding'>
+        <div className='extraPadding backgroundAll'>
             <div  className="card text-center row">
             <card className='col-sm-12'>
             <img className= 'image-card-top' style={{width: "25rem"}} src = './profile-pic.png' alt="profile of Joel Prentiss"/>
@@ -16,15 +16,15 @@ export default function Home(){
             <h5>Joel is an active video content creator with over 93k followers in his community!</h5>
             <div className='row row-cols-1 row-cols-md-3 g-4'>
             <card className='card-sm'>
-            <img className='card-img-top' src="https://via.placeholder.com/150C/O https://placeholder.com"></img>
+            <img className='imageResize' src="./Tiktok-img.png" alt='TikTok Logo'></img>
             <button className='button'>Follow Joel on Tik Tok</button>
             </card>
             <card className='card-sm'>
-            <img  className='card-img-top' src="https://via.placeholder.com/150C/O https://placeholder.com"></img>
+            <img  className='imageResize' src="./YT-img.png" alt='Youtube Logo'></img>
             <button className='button'>Subscribe to Joel on YouTube</button>
             </card>
             <card className='card-sm'>
-            <img className='card-img-top' src="https://via.placeholder.com/150C/O https://placeholder.com"></img>
+            <img className='imageResize' src="./IG-img.png" alt='Instagram Logo'></img>
             <button className='button'>Follow to Joel on Instagram</button>
             </card>
             </div>

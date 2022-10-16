@@ -1,3 +1,7 @@
+.backgroundAll{
+    color: #f8fff4
+}
+
 .adjust{
     color: #f8fff4;
     background-color: #0E0004;
@@ -23,6 +27,8 @@ header{
 
 .extraPadding{
     padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    background-color: #f8fff4;
 }
 
 .contactPadding{
@@ -40,4 +46,18 @@ header{
 li{
     background-color: #f8fff4;
     color: #0E0004
+}
+
+.footerLink{
+color: #f8fff4;
+font-weight: lighter;
+}
+
+.footerLink:hover{
+    color:#da0011;
+    font-weight: bolder;
+}
+
+.imageResize{
+    width: 75%;
 }
