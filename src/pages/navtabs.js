@@ -13,13 +13,9 @@ function NavTabs({currentPage, handlePageChange}){
                 </div>
             </header>
         </div>
-        <nav className="navbar navbar-expand-lg text-uppercase fixed-top" id="mainNav">
+        <nav className="navbar-expand-lg text-uppercase fixed-top" id="mainNav">
             <div className="container">
-             <button className="btn navbar-toggler text-uppercase rounded" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i className="fas fa-bars"></i>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarResponsive">
+             <div className="navbar">
                     <ul className="navbar-nav ms-auto navLi">
                     <li className="nav-item mx-0 mx-lg-1 navLi"><a  
                     href="#home" onClick={() => handlePageChange('home')}

@@ -10,22 +10,30 @@ export default function Home(){
             <card className='col-sm-12'>
             <img className= 'image-card-top' style={{width: "25rem"}} src = './profile-pic.png' alt="profile of Joel Prentiss"/>
             <h3 className='card-title'>Joel Prentiss is a web developer specilizing in full stack development. An experienced entrepeneur and content creator. Joel is also a US Navy Veteran.</h3>
-            <p className='card-body'>You know, if it wasn't for the existential terror of staring into a void of space, I'd say I'm feeling better today. The infection's run its course, Thanks to the blue meanie back there. No, you accidentally survived. It's a billion to one cosmic fluke. And now you wanna pull off a... What do you call it?  Wai-Wait a second, let me ask you something. If we can do this, you know, go back in time, why don't we just find baby Thanos, you know, and...  Now, this may benefit your reality, but my new one…not so much. In this new branched Reality, without our chief weapon against the forces of darkness, our world will be overrun. Millions will suffer. So, tell me, Doctor, can your science prevent all that?  For the last five years I've been trying to do one thing: Get to right here. That's all it's been about. Bringing everybody back.  </p>
+            <p className='card-body'>
+                Since leaving active duty military service in 2016, my professional career has been filled with some truly incredible work experiences. In 2017 I began working at JP Morgan Chase, and within a few short years I moved from teller to a licensed investment banker. I eventually left banking to pursue a lifelong dream of business ownership. I have spent the last two years getting a very practical education in everything from content marketing and social media management, financial planning and forecasting, and all the other hats and roles one fills when running a small business. I have a strong passion for developing and implementing business processes, marketing campaigns and enriching customer and user experience. I believe my practical skills and technical knowledge will make me an excellent addition to your team. 
+            </p>
             
-            <h4>Check out Joel on Social Media!</h4>
-            <h5>Joel is an active video content creator with over 93k followers in his community!</h5>
+            <h4>Check me out on Social Media!</h4>
+            <h5>I am an active video content creator with over 93k followers in his community!</h5>
             <div className='row row-cols-1 row-cols-md-3 g-4'>
             <card className='card-sm'>
             <img className='imageResize' src="./Tiktok-img.png" alt='TikTok Logo'></img>
-            <button className='button'>Follow Joel on Tik Tok</button>
+            <a href='https://www.tiktok.com/@thegijoel?lang=en'>
+            <button className='button'>Follow me on Tik Tok</button>
+            </a>
             </card>
             <card className='card-sm'>
             <img  className='imageResize' src="./YT-img.png" alt='Youtube Logo'></img>
-            <button className='button'>Subscribe to Joel on YouTube</button>
+            <a href='https://youtube.com/channel/UCdEh-M50CLrCv_W81k3hEBA'>
+            <button className='button'>Subscribe to me on YouTube</button>
+            </a>
             </card>
             <card className='card-sm'>
             <img className='imageResize' src="./IG-img.png" alt='Instagram Logo'></img>
-            <button className='button'>Follow to Joel on Instagram</button>
+            <a href='https://instagram.com/thegijoel'>
+            <button className='button'>Follow me on Instagram</button>
+            </a>
             </card>
             </div>
             </card>

@@ -61,3 +61,14 @@ font-weight: lighter;
 .imageResize{
     width: 75%;
 }
+
+.resumePadding{
+    padding-top: 8%;
+    padding-bottom: 3.5%;
+    background-color: #f8fff4;
+}
+
+.resumePaddingTwo{
+    padding-top: 5%;
+    background-color: #f8fff4;
+}

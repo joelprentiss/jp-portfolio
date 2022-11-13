@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import NavTabs from '../src/pages/navtabs';
 import Home from '../src/pages/home';
 import Project from '../src/pages/project';
-import Resume from '../src/pages/resume';
+import MyResume from '../src/pages/resume';
 import Contact from '../src/pages/contact';
 import Footer from '../src/pages/footer';
 
@@ -18,7 +18,7 @@ export default function MainContainer() {
       return <Project />;
     }
     if (currentPage === 'resume') {
-      return <Resume />;
+      return <MyResume />;
     }
     if(currentPage === 'contact'){
       return <Contact/>
