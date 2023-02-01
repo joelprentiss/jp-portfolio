@@ -80,7 +80,7 @@ deployment.
 </div>
 <h6 className='text-center'>Click the link below to access a printable version of this resume</h6>
   <div className='d-flex justify-content-center'>
-    <a href='https://drive.google.com/file/d/1IYUBSlnNKcrfeT3BrP3EVuRcXynxZgdf/view?usp=sharing'>
+    <a href='https://drive.google.com/file/d/1PGLAjVYNuYkVNNwcaYTbpwgYz4HP8ERJ/view?usp=sharing'>
   <button className='button resumeButton'>Get a copy of this resume</button>
   </a>
   </div>
